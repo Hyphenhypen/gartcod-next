@@ -3,7 +3,7 @@
 import Image from "next/image";
 import "../components/index.css";
 import { useEffect } from "react";
-import Grid from "./grid";
+import Grid from "../components/Grid";
 
 export default function Home() {
   useEffect(() => {
@@ -107,27 +107,27 @@ export default function Home() {
   }, []);
 
   return (
-    <div class="MainContainer">
+    <div className="MainContainer">
       <Grid />
-      <div class="tool">
+      <div className="tool">
         <Image src="/designer.cf165e6f.svg" alt="designer gif" width={100} height={100}/>
       </div>
-      <div class="body-container">
-        <div class="main-container"> 
-          <div class="header">
-            <h1 id="header-h1-span" class="header-h1">
-              <Image class="gartcod-img" id="gartcod-img" src='/gartcod-without-bg.webp' width={90} height={90}/><span> for </span> <Image src='/chrome.svg' class="gartcod-google" id="gartcod" width={90} height={90} /> & Cloud gaming
+      <div className="body-container">
+        <div className="main-container">
+          <div className="header">
+            <h1 id="header-h1-span" className="header-h1">
+              <Image className="gartcod-img" id="gartcod-img" src='/gartcod-without-bg.webp' alt="gartcod=without-bg image" width={90} height={90}/><span> for </span> <Image src='/chrome.svg' alt="chrome image" className="gartcod-google" id="gartcod" width={90} height={90} /> & Cloud gaming
             </h1>
           </div>
-          <div class="main"><h1>Join us on the lunch of gartcod by </h1><Image src="/provoke_logo.webp" alt="provoke logo" width={50} height={100} /></div>
-          <div class="footer">
-            <div class="time">
-              <div class="timing"><p id="days">31 </p><span id="span">DAYS</span></div>
-              <div class="timing"><p id="hours">31 </p> <span id="span">HOURS</span></div>
-              <div class="timing"><p id="minutes">31 </p> <span id="span">MINUTES</span></div>
-              <div class="timing"><p id="seconds">31 </p> <span id="span">SECONDS</span></div>
+          <div className="main"><h1>Join us on the lunch of gartcod by </h1><Image src="/provoke_logo.webp" alt="provoke logo" width={50} height={100} /></div>
+          <div className="footer">
+            <div className="time">
+              <div className="timing"><p id="days">31 </p><span id="span">DAYS</span></div> 
+              <div className="timing"><p id="hours">31 </p> <span id="span">HOURS</span></div>
+              <div className="timing"><p id="minutes">31 </p> <span id="span">MINUTES</span></div>
+              <div className="timing"><p id="seconds">31 </p> <span id="span">SECONDS</span></div>
             </div>
-            <div class="ticket">
+            <div className="ticket">
               <button id="ticket-button">Claim Ticket</button>
             </div>
           </div>

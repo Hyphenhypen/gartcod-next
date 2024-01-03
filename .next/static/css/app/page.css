@@ -1,0 +1,226 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/components/index.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;800;900&display=swap');
+
+.MainContainer{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.body-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: white; 
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    position: relative;
+    overflow-y: hidden;
+    font-family: 'Poppins', sans-serif;
+    width: 660px;
+    height: 80vh;
+    margin-top: 50px;
+    /* border: 1px solid rgb(255, 255, 255); */
+}
+
+@media screen and (min-height: 1000px) {
+    .main-container {
+        height: 30vh;
+    }
+}
+
+.header {
+    font-weight: bold;
+    width: 100%;
+    height: 40%;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+}
+
+.header-h1 {
+    text-align: center;
+    width: 100%;
+}
+
+.header h1{
+    font-size: 4rem;
+    font-weight:900;
+    text-align: center;
+}
+
+.header h2{
+    font-size: 80px;
+    padding: 0;
+}
+
+.gartcod-img{
+    display: inline;
+    margin: -25px 5px;
+}
+
+.header span{
+    color: white;
+}
+
+.gartcod-google {
+    display: inline;
+    margin: -25px 5px;
+    transition: transform 2s ease-in-out;
+}
+
+.timing {
+    transition: transform 2s ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    /* margin-top: 100px; */
+}
+@media screen and (max-width: 400px){
+    .main-container{
+        overflow-y: auto;
+    }
+    .main{
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width: 350px){
+    .main{
+        margin-top: 200px;
+    }
+}
+.main h1{
+    font-size: 0.9rem;
+    font-weight: lighter;
+    opacity: 0.7;
+    word-spacing: 1px;
+}
+
+.tool {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    animation: moveAnimation 4.5s linear forwards;
+    z-index: 400;
+}
+
+@keyframes moveAnimation {
+    0% {
+        transform: translate(0%, 0%); /* Start position */
+      }
+      25% {
+        transform: translate(50vw, 350px); /* Middle position after 2 seconds */
+      }
+      50% {
+        transform: translate(50vw, 550px); /* Middle position after 2.5 seconds */
+      }
+      100% {
+        transform: translate(100vw, 0vh); /* End position after 4.5 seconds */
+        display: none;
+      }
+  }
+
+.main img{
+    height: 50px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    height: 100px;
+}
+
+.footer .time {
+    margin: 30px 0;
+    display: flex;
+    width: 200px; 
+    height: 50px;
+}
+
+.footer .time div{
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    display: flex;
+    font-weight:bold;
+    flex-direction: column;
+}
+
+.footer .time div p{
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.footer .time div span{
+    font-size: 0.4rem;
+}
+
+.footer .ticket{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .ticket button{
+    position: absolute;
+    height: 40px;
+    width: 120px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    bottom: 200px;
+    animation: moveButton 1s linear 1.5s forwards;
+}
+
+@keyframes moveButton {
+    0%{
+        bottom: 200px;
+    }
+    100% {
+        bottom: 20px;
+    }
+  }
+
+#hours, #minutes, #days, #seconds {
+    display: inline-block;
+    font-size: 33px;
+    transform-origin: top;
+    transition-duration: 0.5s;
+    animation: changeNumber 0.5s infinite alternate;
+}
+
+@keyframes changeNumber {
+    0% {
+      transform: translateY(20%);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 0.9;
+    }
+  }
+
+.timing {
+    text-align: center;
+}
